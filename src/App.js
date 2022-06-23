@@ -1,22 +1,22 @@
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-import Skills from "./components/Skills";
-import Work from "./components/Work";
+import About from "./container/About/About";
+import Contact from "./container/Contact/Contact";
+import Home from "./container/Home/Home";
+import Navbar from "./container/Navbar/Navbar";
+import Skills from "./container/Skills/Skills";
+import Work from "./container/Work/Work";
 
 
 function App() {
-  return (
-    <div>
-      <Navbar />
-      <Home />
-      <About />
-      <Skills />
-      <Work />
-      <Contact />
-    </div>
-  );
+    return (
+        <div>
+            <Navbar/>
+            <Home/>
+            <About/>
+            <Skills/>
+            <Work/>
+            <Contact/>
+        </div>
+    );
 }
 
 export default App;
