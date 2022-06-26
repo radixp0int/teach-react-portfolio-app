@@ -3,8 +3,8 @@ import React from 'react';
 import './About.scss'
 
 const About = () => {
-    const aboutMeTitle = 'About';
-    const aboutMeHighlight = 'Hi. I\'m Nastassia, nice to meet you. Please take a look around.';
+    const aboutMeHeader = 'About';
+    const aboutMeHighlight = "Hi. I'm Nastassia, nice to meet you. Please take a look around.";
     const aboutMeParagraph =
         'I am passionate about building excellent software that improves\n' +
         'the lives of those around me. I specialize in creating software\n' +
@@ -13,12 +13,12 @@ const About = () => {
         'a software expert available at your fingertips?';
 
     return (
-        <div name='about' className='app__about-container'>
+        <div name='about' className='app__about'>
             <div className='app__about-items'>
                 <div className='app__about-column-1'>
                     <div className='app__about-header-div'>
                         <p className='app__about-header'>
-                            {aboutMeTitle}
+                            {aboutMeHeader}
                         </p>
                     </div>
                     <div></div>
