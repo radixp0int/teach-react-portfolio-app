@@ -71,8 +71,8 @@ const Skills = () => {
                 </div>
 
                 <div className='app_skills-grid'>
-                    {skillItems.map((skill) =>
-                        <div className='app_skills-item'>
+                    {skillItems.map((skill, index) =>
+                        <div className='app_skills-item' id={`skills-item-` + index} key={skill.text + index}>
                             <img className='app_skills-item-img' src={skill.src} alt={skill.altText}/>
                             <p className='app_skills-item-text'>{skill.text}</p>
                         </div>
