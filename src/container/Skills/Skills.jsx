@@ -40,13 +40,13 @@ const Skills = () => {
         },
         {
             src: Node,
-            altText: 'HTML icon',
-            text: 'React'
+            altText: 'Node icon',
+            text: 'Node'
         },
         {
             src: Mongo,
-            altText: 'HTML icon',
-            text: 'React'
+            altText: 'Mongo icon',
+            text: 'Mongo'
         },
         {
             src: GitHub,
