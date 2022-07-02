@@ -4,8 +4,7 @@ import {
     FaTimes,
     FaGithub,
     FaLinkedin,
-    FaFacebook,
-    FaLinkedinIn,
+    FaInstagram,
 } from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs';
@@ -20,11 +19,11 @@ const Navbar = () => {
     return (
         <div className='app__navbar'>
             <div className='app__navbar-logo'>
-                <img src={Logo} alt='Logo Image' style={{width: '50px'}}/>
+                <img src={Logo} alt='Logo Image'/>
             </div>
 
             {/* menu */}
-            <ul className='hidden md:flex'>
+            <ul className='app__navbar-links'>
                 <li>
                     <Link to='home' smooth={true} duration={500}>
                         Home
@@ -53,8 +52,8 @@ const Navbar = () => {
             </ul>
 
             {/* Hamburger */}
-            <div onClick={handleClick} className='md:hidden z-10'>
-                {!nav ? <FaBars/> : <FaTimes/>}
+            <div onClick={handleClick} className='app__navbar-minimized'>
+                {!nav ? <FaBars size={25}/> : <FaTimes/>}
             </div>
 
             {/* Mobile menu */}
@@ -62,33 +61,33 @@ const Navbar = () => {
                 className={
                     !nav
                         ? 'hidden'
-                        : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
+                        : 'app__navbar-mobile'
                 }
             >
-                <li className='py-6 text-4xl'>
+                <li className='app__navbar-mobile-item'>
                     <Link onClick={handleClick} to='home' smooth={true} duration={500}>
                         Home
                     </Link>
                 </li>
-                <li className='py-6 text-4xl'>
+                <li className='app__navbar-mobile-item'>
                     {' '}
                     <Link onClick={handleClick} to='about' smooth={true} duration={500}>
                         About
                     </Link>
                 </li>
-                <li className='py-6 text-4xl'>
+                <li className='app__navbar-mobile-item'>
                     {' '}
                     <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
                         Skills
                     </Link>
                 </li>
-                <li className='py-6 text-4xl'>
+                <li className='app__navbar-mobile-item'>
                     {' '}
                     <Link onClick={handleClick} to='work' smooth={true} duration={500}>
                         Work
                     </Link>
                 </li>
-                <li className='py-6 text-4xl'>
+                <li className='app__navbar-mobile-item'>
                     {' '}
                     <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
                         Contact
@@ -97,36 +96,36 @@ const Navbar = () => {
             </ul>
 
             {/* Social icons */}
-            <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+            <div className='app__navbar-social-menu'>
                 <ul>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
+                    <li className='app__navbar-social-item bg-blue-600'>
                         <a
-                            className='flex justify-between items-center w-full text-gray-300'
-                            href='/Users/Christian-Sifuentes/Documents/Developer/portfolio-react-tailwind-app/public'
+                            className='app__navbar-social-item-link'
+                            href='https://www.linkedin.com/'
                         >
                             Linkedin <FaLinkedin size={30}/>
                         </a>
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
+                    <li className='app__navbar-social-item bg-[#333333]'>
                         <a
-                            className='flex justify-between items-center w-full text-gray-300'
-                            href='/Users/Christian-Sifuentes/Documents/Developer/portfolio-react-tailwind-app/public'
+                            className='app__navbar-social-item-link'
+                            href='https://www.github.com/'
                         >
                             Github <FaGithub size={30}/>
                         </a>
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
+                    <li className='app__navbar-social-item bg-[#db2777]'>
                         <a
-                            className='flex justify-between items-center w-full text-gray-300'
-                            href='/Users/Christian-Sifuentes/Documents/Developer/portfolio-react-tailwind-app/public'
+                            className='app__navbar-social-item-link'
+                            href='https://www.google.com/gmail/about/'
                         >
                             Email <HiOutlineMail size={30}/>
                         </a>
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
+                    <li className='app__navbar-social-item bg-[#565f69]'>
                         <a
-                            className='flex justify-between items-center w-full text-gray-300'
-                            href='/Users/Christian-Sifuentes/Documents/Developer/portfolio-react-tailwind-app/public'
+                            className='app__navbar-social-item-link'
+                            href='#'
                         >
                             Resume <BsFillPersonLinesFill size={30}/>
                         </a>
