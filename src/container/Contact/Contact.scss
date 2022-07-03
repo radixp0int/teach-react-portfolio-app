@@ -1,0 +1,63 @@
+.app__contact {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #0a192f;
+}
+
+.app__contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  width: 100%;
+}
+
+.app__contact-header {
+  display: inline;
+  color: #D1D5DB;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  border-bottom-width: 4px;
+  border-color: #DB2777;
+}
+
+.app__contact-sub-header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #D1D5DB;
+}
+
+.app__contact-name-input {
+  padding: 0.5rem;
+  background: #ccd6f6;
+}
+
+.app__contact-email-input {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: #ccd6f6;
+}
+
+.app__contact-message-input {
+  padding: 0.5rem;
+  background: #ccd6f6;
+}
+
+.app__contact-submit-btn {
+  display: flex;
+  padding: 0.75rem 1rem;
+  margin: 2rem auto;
+  color: #ffffff;
+  align-items: center;
+  border-width: 2px;
+
+  &:hover {
+    background-color: #DB2777;
+    border-color: #DB2777;
+  }
+}
