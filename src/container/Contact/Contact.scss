@@ -1,11 +1,16 @@
 .app__contact {
   display: flex;
+  flex-direction: row;
   padding: 1rem;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
   background: #0a192f;
+
+  @media (max-width: 550px) {
+    padding-top: 4rem !important;
+  }
 }
 
 .app__contact-form {

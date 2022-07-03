@@ -107,3 +107,21 @@
   color: #D1D5DB;
   width: 100%;
 }
+
+@keyframes navbar {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+@-webkit-keyframes navbar {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.8;
+  }
+}

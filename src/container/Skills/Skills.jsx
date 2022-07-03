@@ -16,7 +16,7 @@ import Spring from '../../assets/spring.png';
 
 const Skills = () => {
     const skillsHeader = 'Skills';
-    const skillsSubHeader = "// These are the technologies I've worked with";
+    const skillsSubHeader = "I worked with all of these technologies.";
     const skillItems = [
         {
             src: Angular,
@@ -62,19 +62,19 @@ const Skills = () => {
     ]
 
     return (
-        <div name='skills' className='app_skills'>
+        <div name='skills' className='app__skills'>
             {/* Container */}
-            <div className='app_skills-container'>
+            <div className='app__skills-container'>
                 <div>
-                    <p className='app_skills-header'>{skillsHeader}</p>
-                    <p className='app_skills-sub-header'>{skillsSubHeader}</p>
+                    <p className='app__skills-header'>{skillsHeader}</p>
+                    <p className='app__skills-sub-header'>{skillsSubHeader}</p>
                 </div>
 
-                <div className='app_skills-grid'>
+                <div className='app__skills-grid'>
                     {skillItems.map((skill, index) =>
-                        <div className='app_skills-item' id={`skills-item-` + index} key={skill.text + index}>
-                            <img className='app_skills-item-img' src={skill.src} alt={skill.altText}/>
-                            <p className='app_skills-item-text'>{skill.text}</p>
+                        <div className='app__skills-item' id={`skills-item-` + index} key={skill.text + index}>
+                            <img className='app__skills-item-img' src={skill.src} alt={skill.altText}/>
+                            <p className='app__skills-item-text'>{skill.text}</p>
                         </div>
                     )}
                     {/*Old Way*/}

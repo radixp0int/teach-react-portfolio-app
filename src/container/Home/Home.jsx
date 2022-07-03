@@ -8,9 +8,8 @@ const Home = () => {
     const name = 'Nikola Haroshka';
     const statement = "I'm a Full Stack Developer.";
     const description =
-        'I’m a full-stack developer specializing in building (and occasionally\n' +
-        'designing) exceptional digital experiences. Currently, I’m focused on\n' +
-        'building responsive full-stack web applications.';
+        'I’m a full-stack developer specializing in building digital experiences for a Financial Institution. ' +
+        'Currently, I’m focused on building responsive full-stack web applications.';
     const nextSection = 'View Work';
     return (
         <div name='home' className='app__home'>

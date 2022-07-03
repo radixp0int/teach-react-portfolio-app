@@ -18,6 +18,11 @@
 
 .app__home-hello {
   color: #DB2777;
+  font-size: 1.75rem;
+
+  @media (max-width: 640px) {
+    font-size: 1.25rem;
+  }
 }
 
 .app__home-name {
