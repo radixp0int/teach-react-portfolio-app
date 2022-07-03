@@ -1,10 +1,8 @@
 .app_skills {
+  color: #D1D5DB;
   width: 100%;
   height: 100vh;
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(10 25 47 / var(--tw-bg-opacity));
+  background: #0a192f;
 }
 
 .app_skills-container {
@@ -25,8 +23,7 @@
   line-height: 2.5rem;
   font-weight: 700;
   border-bottom-width: 4px;
-  --tw-border-opacity: 1;
-  border-color: rgb(219 39 119 / var(--tw-border-opacity));
+  border-color: #DB2777;
 }
 
 .app_skills-sub-header {
@@ -49,13 +46,8 @@
 }
 
 .app_skills-item {
-  --tw-shadow-color: #040c16;
-  --tw-shadow: var(--tw-shadow-colored);
   transition-duration: 500ms;
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   &:hover {
     --tw-scale-x: 1.1;
     --tw-scale-y: 1.1;

@@ -1,0 +1,33 @@
+.app__work {
+  color: #D1D5DB;
+  width: 100%;
+  height: 100vh;
+  background: #0a192f;
+}
+
+.app_work-container {
+  display: flex;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.app__work-header {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  display: inline;
+  border-bottom-width: 4px;
+  color: #D1D5DB;
+  border-color: #DB2777;
+}
+
+.app__work-sub-header {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}

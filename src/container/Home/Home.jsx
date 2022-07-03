@@ -5,7 +5,7 @@ import './Home.scss'
 
 const Home = () => {
     const greeting = 'Hi, my name is';
-    const name = 'Nastassia Haroshka';
+    const name = 'Nikola Haroshka';
     const statement = "I'm a Full Stack Developer.";
     const description =
         'I’m a full-stack developer specializing in building (and occasionally\n' +
