@@ -5,7 +5,7 @@ import realEstate from '../../assets/realestate.jpg';
 
 const Work = () => {
     const workHeader = 'Work';
-    const workSubHeader = "// Check out some of my recent work";
+    const workSubHeader = "Check out some of my recent projects.";
     return (
         <div name='work' className='app__work'>
             <div className='app__work-container'>
@@ -19,28 +19,29 @@ const Work = () => {
                 </div>
 
                 {/* Container */}
-                <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
+                <div className='app__work-grid'>
 
                     {/* Grid Item */}
+                    {/* photoUrl, appName*/}
                     <div
                         style={{backgroundImage: `url(${WorkImg})`}}
-                        className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+                        className='app__work-grid-item group container content-div'
                     >
                         {/* Hover Effects */}
                         <div className='opacity-0 group-hover:opacity-100'>
-              <span className='text-2xl font-bold text-white tracking-wider'>
-                React JS Application
-              </span>
-                            <div className='pt-8 text-center'>
-                                <a href='/Users/Christian-Sifuentes/Documents/Developer/portfolio-react-tailwind-app/public'>
+                            <span className='app__work-grid-item-text'>
+                                React JS Application
+                            </span>
+                            <div className='app__work-grid-item-btn-container'>
+                                <a href='#'>
                                     <button
-                                        className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                                        className='app__work-grid-item-btn'>
                                         Demo
                                     </button>
                                 </a>
-                                <a href='/Users/Christian-Sifuentes/Documents/Developer/portfolio-react-tailwind-app/public'>
+                                <a href='#'>
                                     <button
-                                        className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                                        className='app__work-grid-item-btn'>
                                         Code
                                     </button>
                                 </a>
@@ -49,23 +50,23 @@ const Work = () => {
                     </div>
                     <div
                         style={{backgroundImage: `url(${realEstate})`}}
-                        className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+                        className='app__work-grid-item group container content-div'
                     >
                         {/* Hover Effects */}
                         <div className='opacity-0 group-hover:opacity-100'>
-              <span className='text-2xl font-bold text-white tracking-wider'>
-                React JS Application
-              </span>
-                            <div className='pt-8 text-center'>
-                                <a href='/Users/Christian-Sifuentes/Documents/Developer/portfolio-react-tailwind-app/public'>
+                            <span className='app__work-grid-item-text'>
+                                React JS Application
+                            </span>
+                            <div className='app__work-grid-item-btn-container'>
+                                <a href='#'>
                                     <button
-                                        className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                                        className='app__work-grid-item-btn'>
                                         Demo
                                     </button>
                                 </a>
-                                <a href='/Users/Christian-Sifuentes/Documents/Developer/portfolio-react-tailwind-app/public'>
+                                <a href='#'>
                                     <button
-                                        className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                                        className='app__work-grid-item-btn'>
                                         Code
                                     </button>
                                 </a>
@@ -79,19 +80,19 @@ const Work = () => {
                     >
                         {/* Hover Effects */}
                         <div className='opacity-0 group-hover:opacity-100'>
-              <span className='text-2xl font-bold text-white tracking-wider'>
-                React JS Application
-              </span>
-                            <div className='pt-8 text-center'>
-                                <a href='/Users/Christian-Sifuentes/Documents/Developer/portfolio-react-tailwind-app/public'>
+                            <span className='app__work-grid-item-text'>
+                                React JS Application
+                            </span>
+                            <div className='app__work-grid-item-btn-container'>
+                                <a href='#'>
                                     <button
-                                        className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                                        className='app__work-grid-item-btn'>
                                         Demo
                                     </button>
                                 </a>
-                                <a href='/Users/Christian-Sifuentes/Documents/Developer/portfolio-react-tailwind-app/public'>
+                                <a href='#'>
                                     <button
-                                        className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                                        className='app__work-grid-item-btn'>
                                         Code
                                     </button>
                                 </a>
@@ -104,19 +105,19 @@ const Work = () => {
                     >
                         {/* Hover Effects */}
                         <div className='opacity-0 group-hover:opacity-100'>
-              <span className='text-2xl font-bold text-white tracking-wider'>
-                React JS Application
-              </span>
-                            <div className='pt-8 text-center'>
-                                <a href='/Users/Christian-Sifuentes/Documents/Developer/portfolio-react-tailwind-app/public'>
+                            <span className='app__work-grid-item-text'>
+                                React JS Application
+                            </span>
+                            <div className='app__work-grid-item-btn-container'>
+                                <a href='#'>
                                     <button
-                                        className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                                        className='app__work-grid-item-btn'>
                                         Demo
                                     </button>
                                 </a>
-                                <a href='/Users/Christian-Sifuentes/Documents/Developer/portfolio-react-tailwind-app/public'>
+                                <a href='#'>
                                     <button
-                                        className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                                        className='app__work-grid-item-btn'>
                                         Code
                                     </button>
                                 </a>
@@ -130,19 +131,19 @@ const Work = () => {
                     >
                         {/* Hover Effects */}
                         <div className='opacity-0 group-hover:opacity-100'>
-              <span className='text-2xl font-bold text-white tracking-wider'>
-                React JS Application
-              </span>
-                            <div className='pt-8 text-center'>
-                                <a href='/Users/Christian-Sifuentes/Documents/Developer/portfolio-react-tailwind-app/public'>
+                            <span className='app__work-grid-item-text'>
+                                React JS Application
+                            </span>
+                            <div className='app__work-grid-item-btn-container'>
+                                <a href='#'>
                                     <button
-                                        className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                                        className='app__work-grid-item-btn'>
                                         Demo
                                     </button>
                                 </a>
-                                <a href='/Users/Christian-Sifuentes/Documents/Developer/portfolio-react-tailwind-app/public'>
+                                <a href='#'>
                                     <button
-                                        className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                                        className='app__work-grid-item-btn'>
                                         Code
                                     </button>
                                 </a>
@@ -155,19 +156,19 @@ const Work = () => {
                     >
                         {/* Hover Effects */}
                         <div className='opacity-0 group-hover:opacity-100'>
-              <span className='text-2xl font-bold text-white tracking-wider'>
-                React JS Application
-              </span>
-                            <div className='pt-8 text-center'>
-                                <a href='/Users/Christian-Sifuentes/Documents/Developer/portfolio-react-tailwind-app/public'>
+                            <span className='app__work-grid-item-text'>
+                                React JS Application
+                            </span>
+                            <div className='app__work-grid-item-btn-container'>
+                                <a href='#'>
                                     <button
-                                        className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                                        className='app__work-grid-item-btn'>
                                         Demo
                                     </button>
                                 </a>
-                                <a href='/Users/Christian-Sifuentes/Documents/Developer/portfolio-react-tailwind-app/public'>
+                                <a href='#'>
                                     <button
-                                        className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                                        className='app__work-grid-item-btn'>
                                         Code
                                     </button>
                                 </a>

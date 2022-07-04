@@ -6,9 +6,14 @@
   padding-right: 1rem;
   position: fixed;
   width: 100%;
-  height: 80px;
+  height: 5rem;
   background: #0a192f;
   color: #D1D5DB;
+
+  @media screen and (max-width: 480px) {
+    //height: 4.5rem;
+    background-color:rgba(10,25,47,0.2);
+  }
 }
 
 .app__navbar-logo {
@@ -39,7 +44,7 @@
 .app__navbar-links {
   display: none;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     font-size: 1.25rem;
   }
@@ -49,7 +54,7 @@
   z-index: 10;
   padding-right: 0.5rem !important;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
@@ -81,7 +86,7 @@
   left: 0px;
   top: 35%;
 
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     display: flex;
   }
 }

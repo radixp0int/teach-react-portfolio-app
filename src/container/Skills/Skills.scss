@@ -4,6 +4,10 @@
   height: 100vh;
   background: #0a192f;
   margin: auto;
+
+  @media (max-width: 700px) {
+    padding-top: 1rem !important;
+  }
 }
 
 .app__skills-container {
@@ -11,11 +15,11 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem;
+  padding: 2rem 2rem 1rem 2rem;
 }
 
 .app__skills-header {
