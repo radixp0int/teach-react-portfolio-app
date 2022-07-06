@@ -1,16 +1,18 @@
-import React from 'react';
-import { HiArrowNarrowRight } from 'react-icons/hi';
+import React from 'react'
+import {HiArrowNarrowRight} from 'react-icons/hi';
+import Typewriter from "typewriter-effect";
 
 import './Home.scss'
 
 const Home = () => {
     const greeting = 'Hi, my name is';
-    const name = 'Nikola Haroshka';
-    const statement = "I'm a Full Stack Developer.";
+    const name = 'Nicholas Haroshka';
+    const statement = "I'm a ";
     const description =
         'I’m a full-stack developer specializing in building digital experiences for a Financial Institution. ' +
         'Currently, I’m focused on building responsive full-stack web applications.';
     const nextSection = 'View Work';
+
     return (
         <div name='home' className='app__home'>
             {/* Container */}
@@ -20,7 +22,20 @@ const Home = () => {
                 <h1 className='app__home-name'>
                     {name}</h1>
                 <h2 className='app__home-statement'>
-                    {statement}</h2>
+                    {/*{statement}*/}
+                    <Typewriter
+                        options={{
+                            strings: [
+                                `${statement}Back End Developer`,
+                                `${statement}Front End Developer`,
+                                `${statement}UI Designer`],
+                            autoStart: true,
+                            loop: true,
+                            delay: 'natural',
+                            pauseFor: 1500,
+                        }}
+                    />
+                </h2>
                 <p className='app__home-description'>
                     {description}</p>
                 <div>

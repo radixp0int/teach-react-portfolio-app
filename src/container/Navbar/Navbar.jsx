@@ -13,6 +13,28 @@ import {Link} from 'react-scroll';
 import './Navbar.scss';
 
 const Navbar = () => {
+    const navItems = [
+        {
+            linkTo: 'home',
+            linkText: 'Home'
+        },
+        {
+            linkTo: 'about',
+            linkText: 'About'
+        },
+        {
+            linkTo: 'skills',
+            linkText: 'Skills'
+        },
+        {
+            linkTo: 'work',
+            linkText: 'Work'
+        },
+        {
+            linkTo: 'contact',
+            linkText: 'Contact'
+        }
+    ]
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
 
@@ -24,31 +46,42 @@ const Navbar = () => {
 
             {/* menu */}
             <ul className='app__navbar-links'>
-                <li>
-                    <Link to='home' smooth={true} duration={500}>
-                        Home
-                    </Link>
-                </li>
-                <li>
-                    <Link to='about' smooth={true} duration={500}>
-                        About
-                    </Link>
-                </li>
-                <li>
-                    <Link to='skills' smooth={true} duration={500}>
-                        Skills
-                    </Link>
-                </li>
-                <li>
-                    <Link to='work' smooth={true} duration={500}>
-                        Work
-                    </Link>
-                </li>
-                <li>
-                    <Link to='contact' smooth={true} duration={500}>
-                        Contact
-                    </Link>
-                </li>
+                {navItems.map((navLink, index) =>
+                    <li key={'nav-link-' + index+1}>
+                        <Link
+                            to={navLink.linkTo}
+                            smooth={true}
+                            duration={500}
+                        >
+                            {navLink.linkText}
+                        </Link>
+                    </li>
+                )}
+                {/*<li>*/}
+                {/*    <Link to='home' smooth={true} duration={500}>*/}
+                {/*        Home*/}
+                {/*    </Link>*/}
+                {/*</li>*/}
+                {/*<li>*/}
+                {/*    <Link to='about' smooth={true} duration={500}>*/}
+                {/*        About*/}
+                {/*    </Link>*/}
+                {/*</li>*/}
+                {/*<li>*/}
+                {/*    <Link to='skills' smooth={true} duration={500}>*/}
+                {/*        Skills*/}
+                {/*    </Link>*/}
+                {/*</li>*/}
+                {/*<li>*/}
+                {/*    <Link to='work' smooth={true} duration={500}>*/}
+                {/*        Work*/}
+                {/*    </Link>*/}
+                {/*</li>*/}
+                {/*<li>*/}
+                {/*    <Link to='contact' smooth={true} duration={500}>*/}
+                {/*        Contact*/}
+                {/*    </Link>*/}
+                {/*</li>*/}
             </ul>
 
             {/* Hamburger */}
