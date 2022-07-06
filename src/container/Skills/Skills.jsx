@@ -1,60 +1,49 @@
 import React from 'react';
 
 import './Skills.scss'
-import HTML from '../../assets/html.png';
-import CSS from '../../assets/css.png';
-import JavaScript from '../../assets/javascript.png';
-import ReactImg from '../../assets/react.png';
-import Node from '../../assets/node.png';
-import Vue from '../../assets/vue.png';
-import AWS from '../../assets/aws.png';
-import GitHub from '../../assets/github.png';
-import Photoshop from '../../assets/photoshop.png';
-import Mongo from '../../assets/mongo.png';
-import Angular from '../../assets/angular.png';
-import Spring from '../../assets/spring.png';
+import { images } from '../../constants'
 
 const Skills = () => {
     const skillsHeader = 'Skills';
     const skillsSubHeader = "I worked with all of these technologies.";
     const skillItems = [
         {
-            src: Angular,
+            src: images.Angular,
             altText: 'Angular icon',
             text: 'Angular'
         },
         {
-            src: Spring,
+            src: images.Spring,
             altText: 'Spring icon',
             text: 'Spring'
         },
         {
-            src: JavaScript,
+            src: images.JS,
             altText: 'JavaScript icon',
             text: 'JavaScript'
         },
         {
-            src: ReactImg,
+            src: images.React,
             altText: 'React icon',
             text: 'React'
         },
         {
-            src: Node,
+            src: images.NodeJS,
             altText: 'Node icon',
             text: 'Node'
         },
         {
-            src: Mongo,
+            src: images.MongoDB,
             altText: 'Mongo icon',
             text: 'Mongo'
         },
         {
-            src: GitHub,
+            src: images.GitHub,
             altText: 'GitHub icon',
             text: 'GitHub'
         },
         {
-            src: Photoshop,
+            src: images.Photoshop,
             altText: 'Photoshop icon',
             text: 'Photoshop'
         }
@@ -72,12 +61,20 @@ const Skills = () => {
 
                 <div className='app__skills-grid'>
                     {skillItems.map((skill, index) =>
-                        <div className='app__skills-item' id={`skills-item-` + index} key={skill.text + index}>
-                            <img className='app__skills-item-img' src={skill.src} alt={skill.altText}/>
+                        <div
+                            className='app__skills-item'
+                            id={`skills-item-` + index}
+                            key={skill.text + index}
+                        >
+                            <img
+                                className='app__skills-item-img'
+                                src={skill.src}
+                                alt={skill.altText}/>
                             <p className='app__skills-item-text'>{skill.text}</p>
                         </div>
                     )}
-                    {/*Old Way*/}
+
+                    {/*Bad Way*/}
                     {/*<div className='app_skills-item'>*/}
                     {/*    <img className='app_skills-item-img' src={HTML} alt="HTML icon"/>*/}
                     {/*    <p className='app_skills-item-text'>HTML</p>*/}
@@ -110,6 +107,7 @@ const Skills = () => {
                     {/*    <img className='app_skills-item-img' src={AWS} alt="HTML icon"/>*/}
                     {/*    <p className='app_skills-item-text'>AWS</p>*/}
                     {/*</div>*/}
+
                 </div>
             </div>
         </div>
