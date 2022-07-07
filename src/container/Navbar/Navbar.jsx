@@ -8,14 +8,16 @@ import {
 } from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs';
-import Logo from '../../assets/logo.png';
 import {Link} from 'react-scroll';
+
+import Logo from '../../assets/logo.png';
 import { text } from '../../constants'
 import './Navbar.scss';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
+    const TypeWriter = document.querySelector('.Typewriter');
 
     return (
         <div className='app__navbar'>
@@ -65,15 +67,12 @@ const Navbar = () => {
 
             {/* Hamburger */}
             <div onClick={handleClick} className='app__navbar-minimized'>
-                {!nav ? <FaBars size={25}/> : <FaTimes/>}
+                {!nav ? <FaBars size={25}/> : <FaTimes size={25}/>}
             </div>
 
             {/* Mobile menu */}
-            <ul
-                className={
-                    !nav
-                        ? 'hidden'
-                        : 'app__navbar-mobile'
+            <ul className={
+                !nav ? 'hidden': 'app__navbar-mobile'
                 }
             >
                 <li className='app__navbar-mobile-item'>
@@ -96,7 +95,7 @@ const Navbar = () => {
                 <li className='app__navbar-mobile-item'>
                     {' '}
                     <Link onClick={handleClick} to='work' smooth={true} duration={500}>
-                        Work
+                        Projects
                     </Link>
                 </li>
                 <li className='app__navbar-mobile-item'>
