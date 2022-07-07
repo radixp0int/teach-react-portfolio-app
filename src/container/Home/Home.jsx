@@ -6,7 +6,7 @@ import './Home.scss'
 
 const Home = () => {
     const greeting = 'Hi, my name is';
-    const name = 'Nicholas Haroshka';
+    const name = 'Nick Haroshka';
     const statement = "I'm a ";
     const description =
         'I’m a full-stack developer specializing in building digital experiences for a Financial Institution. ' +
@@ -22,17 +22,16 @@ const Home = () => {
                 <h1 className='app__home-name'>
                     {name}</h1>
                 <h2 className='app__home-statement'>
-                    {/*{statement}*/}
                     <Typewriter
                         options={{
                             strings: [
                                 `${statement}Back End Developer`,
                                 `${statement}Front End Developer`,
-                                `${statement}UI Designer`],
+                                `${statement}UI/UX Designer`],
                             autoStart: true,
                             loop: true,
                             delay: 'natural',
-                            pauseFor: 1500,
+                            pauseFor: 1100,
                         }}
                     />
                 </h2>

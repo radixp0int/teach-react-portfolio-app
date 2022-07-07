@@ -1,54 +1,11 @@
 import React from 'react';
 
 import './Skills.scss'
-import { images } from '../../constants'
+import { images, text } from '../../constants'
 
 const Skills = () => {
     const skillsHeader = 'Skills';
     const skillsSubHeader = "I worked with all of these technologies.";
-    const skillItems = [
-        {
-            src: images.Angular,
-            altText: 'Angular icon',
-            text: 'Angular'
-        },
-        {
-            src: images.Spring,
-            altText: 'Spring icon',
-            text: 'Spring'
-        },
-        {
-            src: images.JS,
-            altText: 'JavaScript icon',
-            text: 'JavaScript'
-        },
-        {
-            src: images.React,
-            altText: 'React icon',
-            text: 'React'
-        },
-        {
-            src: images.NodeJS,
-            altText: 'Node icon',
-            text: 'Node'
-        },
-        {
-            src: images.MongoDB,
-            altText: 'Mongo icon',
-            text: 'Mongo'
-        },
-        {
-            src: images.GitHub,
-            altText: 'GitHub icon',
-            text: 'GitHub'
-        },
-        {
-            src: images.Photoshop,
-            altText: 'Photoshop icon',
-            text: 'Photoshop'
-        }
-
-    ]
 
     return (
         <div name='skills' className='app__skills'>
@@ -60,7 +17,7 @@ const Skills = () => {
                 </div>
 
                 <div className='app__skills-grid'>
-                    {skillItems.map((skill, index) =>
+                    {text.skillItems.map((skill, index) =>
                         <div
                             className='app__skills-item'
                             id={`skills-item-` + index}

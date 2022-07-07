@@ -10,31 +10,10 @@ import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs';
 import Logo from '../../assets/logo.png';
 import {Link} from 'react-scroll';
+import { text } from '../../constants'
 import './Navbar.scss';
 
 const Navbar = () => {
-    const navItems = [
-        {
-            linkTo: 'home',
-            linkText: 'Home'
-        },
-        {
-            linkTo: 'about',
-            linkText: 'About'
-        },
-        {
-            linkTo: 'skills',
-            linkText: 'Skills'
-        },
-        {
-            linkTo: 'work',
-            linkText: 'Work'
-        },
-        {
-            linkTo: 'contact',
-            linkText: 'Contact'
-        }
-    ]
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
 
@@ -46,7 +25,7 @@ const Navbar = () => {
 
             {/* menu */}
             <ul className='app__navbar-links'>
-                {navItems.map((navLink, index) =>
+                {text.navItems.map((navLink, index) =>
                     <li key={'nav-link-' + index+1}>
                         <Link
                             to={navLink.linkTo}

@@ -4,7 +4,7 @@ import './Contact.scss'
 
 const Contact = () => {
     const contactHeader = 'Contact';
-    const contactSubHeader = "// Submit the form below or shoot me an email myemail@gmail.com";
+    const contactSubHeader = "Submit the form below or shoot me an email myemail@gmail.com";
     const contactSubmit = "Let's Collaborate";
 
     return (

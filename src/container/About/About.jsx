@@ -4,7 +4,7 @@ import './About.scss'
 
 const About = () => {
     const aboutMeHeader = 'About';
-    const aboutMeHighlight = "Hi. I'm Nikola, nice to meet you. Please take a look around.";
+    const aboutMeHighlight = "Hi. I'm Nick, nice to meet you. Please take a look around.";
     const aboutMeParagraph =
         'I am passionate about building excellent software that improves\n' +
         'the lives of those around me. I specialize in creating software\n' +

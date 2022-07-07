@@ -1,48 +1,10 @@
 import React from 'react';
 import './Work.scss';
-import { images } from '../../constants'
+import { text } from '../../constants'
 
 const Work = () => {
     const workHeader = 'Work';
     const workSubHeader = "Check out some of my recent projects.";
-    const workItems = [
-        {
-            imageUrl: images.DashboardImg,
-            appName: 'Dashboard App',
-            button1: 'Demo',
-            button2: 'Code',
-        },
-        {
-            imageUrl: images.ExpensifyImg,
-            appName: 'Expense Manager App',
-            button1: 'Demo',
-            button2: 'Code',
-        },
-        {
-            imageUrl: images.RealEstateImg,
-            appName: 'React JS Application',
-            button1: 'Demo',
-            button2: 'Code',
-        },
-        {
-            imageUrl: images.RealEstateImg,
-            appName: 'React JS Application',
-            button1: 'Demo',
-            button2: 'Code',
-        },
-        {
-            imageUrl: images.WorkImg,
-            appName: 'React JS Application',
-            button1: 'Demo',
-            button2: 'Code',
-        },
-        {
-            imageUrl: images.DashboardImg,
-            appName: 'Dashboard App',
-            button1: 'Demo',
-            button2: 'Code',
-        }
-    ]
 
     return (
         <div name='work' className='app__work'>
@@ -60,7 +22,7 @@ const Work = () => {
                 <div className='app__work-grid'>
 
                     {/* Grid Item */}
-                    {workItems.map((workItem, index) =>
+                    {text.workItems.map((workItem, index) =>
                             <div
                                 style={{backgroundImage: `url(${workItem.imageUrl})`}}
                                 className='app__work-grid-item group container content-div'
