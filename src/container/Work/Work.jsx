@@ -3,7 +3,7 @@ import './Work.scss';
 import { text } from '../../constants'
 
 const Work = () => {
-    const workHeader = 'Work';
+    const workHeader = 'Projects';
     const workSubHeader = "Check out some of my recent projects.";
 
     return (
@@ -35,13 +35,13 @@ const Work = () => {
                                         {workItem.appName}
                                     </span>
                                     <div className='app__work-grid-item-btn-container'>
-                                        <a href='#'>
+                                        <a href={workItem.button1Href}>
                                             <button
                                                 className='app__work-grid-item-btn'>
                                                 {workItem.button1}
                                             </button>
                                         </a>
-                                        <a href='#'>
+                                        <a href={workItem.button2Href}>
                                             <button
                                                 className='app__work-grid-item-btn'>
                                                 {workItem.button2}

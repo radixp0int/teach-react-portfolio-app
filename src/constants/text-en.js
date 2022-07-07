@@ -15,7 +15,7 @@ const navItems = [
     },
     {
         linkTo: 'work',
-        linkText: 'Work'
+        linkText: 'Projects'
     },
     {
         linkTo: 'contact',
@@ -71,37 +71,49 @@ const workItems = [
         imageUrl: images.DashboardImg,
         appName: 'Dashboard App',
         button1: 'Demo',
+        button1Href: '#',
         button2: 'Code',
+        button2Href: '#',
     },
     {
         imageUrl: images.ExpensifyImg,
         appName: 'Expense Manager App',
         button1: 'Demo',
+        button1Href: 'https://www.expensify.com/',
         button2: 'Code',
+        button2Href: 'https://www.github.com/',
     },
     {
         imageUrl: images.RealEstateImg,
         appName: 'React JS Application',
         button1: 'Demo',
+        button1Href: '#',
         button2: 'Code',
+        button2Href: '#',
     },
     {
         imageUrl: images.RealEstateImg,
         appName: 'React JS Application',
         button1: 'Demo',
+        button1Href: '#',
         button2: 'Code',
+        button2Href: '#',
     },
     {
         imageUrl: images.WorkImg,
         appName: 'React JS Application',
         button1: 'Demo',
+        button1Href: '#',
         button2: 'Code',
+        button2Href: '#',
     },
     {
         imageUrl: images.DashboardImg,
         appName: 'Dashboard App',
         button1: 'Demo',
+        button1Href: '#',
         button2: 'Code',
+        button2Href: '#',
     }
 ]
 

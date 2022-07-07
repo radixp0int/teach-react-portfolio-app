@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Skills.scss'
-import { images, text } from '../../constants'
+import { text } from '../../constants'
 
 const Skills = () => {
     const skillsHeader = 'Skills';
