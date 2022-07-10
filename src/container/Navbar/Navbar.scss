@@ -33,8 +33,8 @@
     @media screen and (max-width: 450px) {
       width: 60px;
       height: auto;
-      padding-left: 0rem;
-      margin-bottom: 0rem;
+      padding-left: 0;
+      margin-bottom: 0;
     }
   }
 }
@@ -68,6 +68,7 @@
   height: 100vh;
   background: #151d36;
   align-items: center;
+  z-index: 2;
 }
 
 .app__navbar-mobile-item {
@@ -81,7 +82,7 @@
   display: none;
   position: fixed;
   flex-direction: column;
-  left: 0px;
+  left: 0;
   top: 35%;
 
   @media screen and (min-width: 1024px) {
@@ -99,7 +100,7 @@
   margin-left: -100px;
 
   &:hover {
-    margin-left: 0px;
+    margin-left: 0;
   }
 }
 
