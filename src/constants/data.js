@@ -117,8 +117,10 @@ const workItems = [
     }
 ]
 
-export default {
+const dataObjects = {
     navItems,
     skillItems,
     workItems,
-}
+};
+
+export default dataObjects;

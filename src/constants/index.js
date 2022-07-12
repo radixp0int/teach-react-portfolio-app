@@ -1,2 +1,2 @@
 export { default as images } from './images';
-export { default as text } from './text-en';
+export { default as text } from './data';
