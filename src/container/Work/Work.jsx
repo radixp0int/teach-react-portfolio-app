@@ -7,7 +7,7 @@ const Work = () => {
     const workSubHeader = "Check out some of my recent projects.";
 
     return (
-        <div name='work' className='app__work'>
+        <div id='work' className='app__work'>
             <div className='app__work-container'>
                 <div className='pb-8'>
                     <p className='app__work-header'>

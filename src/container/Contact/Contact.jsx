@@ -8,7 +8,7 @@ const Contact = () => {
     const contactSubmit = "Let's Collaborate";
 
     return (
-        <div name='contact' className='app__contact'>
+        <div id='contact' className='app__contact'>
             <form
                 method='POST'
                 action="https://getform.io/f/a699a1b2-f225-434e-b317-1fbbde8e006c"

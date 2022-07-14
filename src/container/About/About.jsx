@@ -13,7 +13,7 @@ const About = () => {
         'a software expert available at your fingertips?';
 
     return (
-        <div name='about' className='app__about'>
+        <div id='about' className='app__about'>
             <div className='app__about-items'>
                 <div className='app__about-column-1'>
                     <div className='app__about-header-div'>

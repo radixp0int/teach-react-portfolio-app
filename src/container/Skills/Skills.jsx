@@ -8,7 +8,7 @@ const Skills = () => {
     const skillsSubHeader = "I worked with all of these technologies.";
 
     return (
-        <div name='skills' className='app__skills'>
+        <div id='skills' className='app__skills'>
             {/* Container */}
             <div className='app__skills-container'>
                 <div>

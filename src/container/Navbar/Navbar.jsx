@@ -17,8 +17,10 @@ import './Navbar.scss';
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
-    const TypeWriter = document.querySelector('.Typewriter');
-
+    function handleClick2() {
+        setNav(!nav);
+        console.log("Hello Class!!");
+    }
     return (
         <div className='app__navbar'>
             <div className='app__navbar-logo'>
@@ -66,7 +68,7 @@ const Navbar = () => {
             </ul>
 
             {/* Hamburger */}
-            <div onClick={handleClick} className='app__navbar-minimized'>
+            <div onClick={handleClick2} className='app__navbar-minimized'>
                 {!nav ? <FaBars size={25}/> : <FaTimes size={25}/>}
             </div>
 
