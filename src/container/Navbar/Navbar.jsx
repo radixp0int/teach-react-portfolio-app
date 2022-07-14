@@ -17,10 +17,7 @@ import './Navbar.scss';
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
-    function handleClick2() {
-        setNav(!nav);
-        console.log("Hello Class!!");
-    }
+
     return (
         <div className='app__navbar'>
             <div className='app__navbar-logo'>
@@ -40,35 +37,10 @@ const Navbar = () => {
                         </Link>
                     </li>
                 )}
-                {/*<li>*/}
-                {/*    <Link to='home' smooth={true} duration={500}>*/}
-                {/*        Home*/}
-                {/*    </Link>*/}
-                {/*</li>*/}
-                {/*<li>*/}
-                {/*    <Link to='about' smooth={true} duration={500}>*/}
-                {/*        About*/}
-                {/*    </Link>*/}
-                {/*</li>*/}
-                {/*<li>*/}
-                {/*    <Link to='skills' smooth={true} duration={500}>*/}
-                {/*        Skills*/}
-                {/*    </Link>*/}
-                {/*</li>*/}
-                {/*<li>*/}
-                {/*    <Link to='work' smooth={true} duration={500}>*/}
-                {/*        Work*/}
-                {/*    </Link>*/}
-                {/*</li>*/}
-                {/*<li>*/}
-                {/*    <Link to='contact' smooth={true} duration={500}>*/}
-                {/*        Contact*/}
-                {/*    </Link>*/}
-                {/*</li>*/}
             </ul>
 
             {/* Hamburger */}
-            <div onClick={handleClick2} className='app__navbar-minimized'>
+            <div onClick={handleClick} className='app__navbar-minimized'>
                 {!nav ? <FaBars size={25}/> : <FaTimes size={25}/>}
             </div>
 
@@ -138,7 +110,7 @@ const Navbar = () => {
                     <li className='app__navbar-social-item bg-[#565f69]'>
                         <a
                             className='app__navbar-social-item-link'
-                            href='#'
+                            href='google.com'
                         >
                             Resume <BsFillPersonLinesFill size={30}/>
                         </a>
