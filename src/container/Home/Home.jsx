@@ -8,7 +8,7 @@ import './Home.scss'
 
 const Home = () => {
     const greeting = 'Hi, my name is';
-    const name = 'Nick Haroshka';
+    const name = 'Nancy Herschel';
     const statementList = ["Back End Developer.", "Front End Developer."];
     const description =
         'I’m a full-stack developer specializing in building digital experiences for a Financial Institution. ' +
