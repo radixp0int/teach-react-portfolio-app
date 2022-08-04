@@ -1,7 +1,9 @@
 import React from "react";
 import { HiArrowNarrowRight } from 'react-icons/hi';
-import Typewriter from "../../components/Typewriter";
+import { Link } from "react-scroll";
 
+
+import Typewriter from "../../components/Typewriter";
 import './Home.scss'
 
 const Home = () => {
@@ -11,7 +13,7 @@ const Home = () => {
     const description =
         'I’m a full-stack developer specializing in building digital experiences for a Financial Institution. ' +
         'Currently, I’m focused on building responsive full-stack web applications.';
-    const nextSection = 'View Work';
+    const nextSection = 'View More';
 
     return (
         <div id='home' className='app__home'>
@@ -28,7 +30,10 @@ const Home = () => {
                     {description}</p>
                 <div>
                     <button className='app__home-button group'>
-                        {nextSection}
+                        <Link
+                            to='about' smooth={true} duration={500}>
+                            {nextSection}
+                        </Link>
                         <span className='group-hover:rotate-90 duration-300'>
                             <HiArrowNarrowRight className='ml-3 ' />
                         </span>

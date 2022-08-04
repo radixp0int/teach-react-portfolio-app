@@ -30,41 +30,6 @@ const Skills = () => {
                             <p className='app__skills-item-text'>{skill.text}</p>
                         </div>
                     )}
-
-                    {/*Bad Way*/}
-                    {/*<div className='app_skills-item'>*/}
-                    {/*    <img className='app_skills-item-img' src={HTML} alt="HTML icon"/>*/}
-                    {/*    <p className='app_skills-item-text'>HTML</p>*/}
-                    {/*</div>*/}
-                    {/*<div className='app_skills-item'>*/}
-                    {/*    <img className='app_skills-item-img' src={CSS} alt="HTML icon"/>*/}
-                    {/*    <p className='app_skills-item-text'>CSS</p>*/}
-                    {/*</div>*/}
-                    {/*<div className='app_skills-item'>*/}
-                    {/*    <img className='app_skills-item-img' src={JavaScript} alt="HTML icon"/>*/}
-                    {/*    <p className='app_skills-item-text'>JAVASCRIPT</p>*/}
-                    {/*</div>*/}
-                    {/*<div className='app_skills-item'>*/}
-                    {/*    <img className='app_skills-item-img' src={ReactImg} alt="HTML icon"/>*/}
-                    {/*    <p className='app_skills-item-text'>REACT</p>*/}
-                    {/*</div>*/}
-                    {/*<div className='app_skills-item'>*/}
-                    {/*    <img className='app_skills-item-img' src={GitHub} alt="HTML icon"/>*/}
-                    {/*    <p className='app_skills-item-text'>GITHUB</p>*/}
-                    {/*</div>*/}
-                    {/*<div className='app_skills-item'>*/}
-                    {/*    <img className='app_skills-item-img' src={Node} alt="HTML icon"/>*/}
-                    {/*    <p className='app_skills-item-text'>NODE JS</p>*/}
-                    {/*</div>*/}
-                    {/*<div className='app_skills-item'>*/}
-                    {/*    <img className='app_skills-item-img' src={Mongo} alt="HTML icon"/>*/}
-                    {/*    <p className='app_skills-item-text'>MONGO DB</p>*/}
-                    {/*</div>*/}
-                    {/*<div className='app_skills-item'>*/}
-                    {/*    <img className='app_skills-item-img' src={AWS} alt="HTML icon"/>*/}
-                    {/*    <p className='app_skills-item-text'>AWS</p>*/}
-                    {/*</div>*/}
-
                 </div>
             </div>
         </div>
