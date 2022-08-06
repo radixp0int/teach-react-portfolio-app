@@ -15,8 +15,8 @@ import { text } from "../../constants";
 import "./Navbar.scss";
 
 const Navbar = () => {
-    const [nav, setNav] = useState(false);
-    const handleClick = () => setNav(!nav);
+    const [mobileNav, setMobileNav] = useState(false);
+    const handleClick = () => setMobileNav(!mobileNav);
 
     return (
         <div className="app__navbar">
@@ -37,11 +37,11 @@ const Navbar = () => {
 
             {/* Hamburger */}
             <div onClick={handleClick} className="app__navbar-minimized">
-                {!nav ? <FaBars size={25} /> : <FaTimes size={25} />}
+                {!mobileNav ? <FaBars size={25} /> : <FaTimes size={25} />}
             </div>
 
             {/* Mobile menu */}
-            <ul className={!nav ? "hidden" : "app__navbar-mobile"}>
+            <ul className={!mobileNav ? "hidden" : "app__navbar-mobile"}>
                 {text.navItems.map((navLink, index) => (
                     <li
                         className="app__navbar-mobile-item"

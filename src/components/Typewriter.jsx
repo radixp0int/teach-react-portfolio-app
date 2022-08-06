@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-const Typewriter = ({statements}) => {
+const Typewriter = ({ statements }) => {
 	const [index, setIndex] = useState(0);
 	const [subIndex, setSubIndex] = useState(0);
 	const [blink, setBlink] = useState(true);
