@@ -1,8 +1,10 @@
+@use '../../abstracts' as *;
+
 .app__about {
   color: #D1D5DB;
   width: 100%;
   height: 100vh;
-  background: #151d36;
+  background: $primary-background;
 }
 
 .app__about-items {

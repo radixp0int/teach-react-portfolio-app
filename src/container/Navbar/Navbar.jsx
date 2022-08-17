@@ -78,7 +78,7 @@ const Navbar = () => {
                             Github <FaGithub size={30} />
                         </a>
                     </li>
-                    <li className="app__navbar-social-item bg-[#db2777]">
+                    <li className="app__navbar-social-item app__color-accent">
                         <a
                             className="app__navbar-social-item-link"
                             href="https://www.google.com/gmail/about/"

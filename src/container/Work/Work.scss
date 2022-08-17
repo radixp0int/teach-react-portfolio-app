@@ -1,7 +1,9 @@
+@use '../../abstracts' as *;
+
 .app__work {
   color: #D1D5DB;
   width: 100%;
-  background: #151d36;
+  background: $primary-background;
 
 
   @media (min-width: 768px) {
@@ -32,7 +34,7 @@
   display: inline;
   border-bottom-width: 4px;
   color: #D1D5DB;
-  border-color: #DB2777;
+  border-color: $primary-color;
 }
 
 .app__work-sub-header {
@@ -65,10 +67,20 @@
 
 .app__work-grid-item-text {
   color: #ffffff;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   font-weight: 700;
   letter-spacing: 0.05em;
+
+  @media (min-width: 2000px) {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 .app__work-grid-item-btn-container {

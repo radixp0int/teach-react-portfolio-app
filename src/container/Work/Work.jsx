@@ -23,60 +23,32 @@ const Work = () => {
 
                     {/* Grid Item */}
                     {text.workItems.map((workItem, index) =>
-                            <div
-                                style={{backgroundImage: `url(${workItem.imageUrl})`}}
-                                className='app__work-grid-item group container content-div'
-                                id={`project-` + index}
-                                key={`project-` + index}
-                            >
-                                {/* Hover Effects */}
-                                <div className='opacity-0 group-hover:opacity-100'>
-                                    <span className='app__work-grid-item-text'>
-                                        {workItem.appName}
-                                    </span>
-                                    <div className='app__work-grid-item-btn-container'>
-                                        <a href={workItem.button1Href}>
-                                            <button className='app__work-grid-item-btn'>
-                                                {workItem.button1}
-                                            </button>
-                                        </a>
-                                        <a href={workItem.button2Href}>
-                                            <button className='app__work-grid-item-btn'>
-                                                {workItem.button2}
-                                            </button>
-                                        </a>
-                                    </div>
+                        <div
+                            style={{ backgroundImage: `url(${workItem.imageUrl})` }}
+                            className='app__work-grid-item group container content-div'
+                            id={`project-` + index}
+                            key={`project-` + index}
+                        >
+                            {/* Hover Effects */}
+                            <div className='opacity-0 group-hover:opacity-100'>
+                                <span className='app__work-grid-item-text'>
+                                    {workItem.appName}
+                                </span>
+                                <div className='app__work-grid-item-btn-container'>
+                                    <a href={workItem.button1Href}>
+                                        <button className='app__work-grid-item-btn'>
+                                            {workItem.button1}
+                                        </button>
+                                    </a>
+                                    <a href={workItem.button2Href}>
+                                        <button className='app__work-grid-item-btn'>
+                                            {workItem.button2}
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
+                        </div>
                     )}
-
-                    {/*Terrible Old Way*/}
-                    {/*<div*/}
-                    {/*    style={{backgroundImage: `url(${images.RealEstateImg})`}}*/}
-                    {/*    className='app__work-grid-item group container content-div'*/}
-                    {/*>*/}
-                    {/*    /!* Hover Effects *!/*/}
-                    {/*    <div className='opacity-0 group-hover:opacity-100'>*/}
-                    {/*        <span className='app__work-grid-item-text'>*/}
-                    {/*            React JS Application*/}
-                    {/*        </span>*/}
-                    {/*        <div className='app__work-grid-item-btn-container'>*/}
-                    {/*            <a href='#'>*/}
-                    {/*                <button*/}
-                    {/*                    className='app__work-grid-item-btn'>*/}
-                    {/*                    Demo*/}
-                    {/*                </button>*/}
-                    {/*            </a>*/}
-                    {/*            <a href='#'>*/}
-                    {/*                <button*/}
-                    {/*                    className='app__work-grid-item-btn'>*/}
-                    {/*                    Code*/}
-                    {/*                </button>*/}
-                    {/*            </a>*/}
-                    {/*        </div>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
-
                 </div>
             </div>
         </div>

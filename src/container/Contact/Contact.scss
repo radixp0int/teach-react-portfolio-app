@@ -1,3 +1,5 @@
+@use '../../abstracts' as *;
+
 .app__contact {
   display: flex;
   flex-direction: row;
@@ -5,8 +7,8 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  background: #151d36;
+  height: 100%;
+  background: $primary-background;
 
   @media (max-width: 700px) {
     padding-top: 4rem !important;
@@ -31,7 +33,7 @@
   line-height: 2.5rem;
   font-weight: 700;
   border-bottom-width: 4px;
-  border-color: #DB2777;
+  border-color: $primary-color;
 }
 
 .app__contact-sub-header {
@@ -44,21 +46,21 @@
   padding: 0.5rem;
   margin-top: 0.25rem;
   margin-bottom: 1rem;
-  background: #ccd6f6;
+  background: $secondary-color;
 }
 
 .app__contact-email-input {
   padding: 0.5rem;
   margin-top: 0.25rem;
   margin-bottom: 1rem;
-  background: #ccd6f6;
+  background: $secondary-color;
 }
 
 .app__contact-message-input {
   padding: 0.5rem;
   margin-top: 0.25rem;
   margin-bottom: 1rem;
-  background: #ccd6f6;
+  background: $secondary-color;
 }
 
 .app__contact-submit-btn {
@@ -70,7 +72,7 @@
   border-width: 2px;
 
   &:hover {
-    background-color: #DB2777;
-    border-color: #DB2777;
+    background-color: $primary-color;
+    border-color: $primary-color;
   }
 }
