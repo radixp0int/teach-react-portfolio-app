@@ -30,7 +30,7 @@ const Work = () => {
                             key={`project-` + index}
                         >
                             {/* Hover Effects */}
-                            <div className='opacity-0 group-hover:opacity-100'>
+                            <div className='opacity-0 group-hover:opacity-100 app__work-grid-text-container'>
                                 <span className='app__work-grid-item-text'>
                                     {workItem.appName}
                                 </span>
