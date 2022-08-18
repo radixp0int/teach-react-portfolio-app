@@ -1,7 +1,7 @@
-@use '../../abstracts' as *;
+@use '../../abstracts/index' as *;
 
 .app__work {
-  color: #D1D5DB;
+  color: $text-background;
   width: 100%;
   background: $primary-background;
 
@@ -33,7 +33,7 @@
   font-weight: 700;
   display: inline;
   border-bottom-width: 4px;
-  color: #D1D5DB;
+  color: $text-background;
   border-color: $primary-color;
 }
 

@@ -1,4 +1,4 @@
-@use '../../abstracts' as *;
+@use '../../abstracts/index' as *;
 
 .app__contact {
   display: flex;
@@ -28,7 +28,7 @@
 
 .app__contact-header {
   display: inline;
-  color: #D1D5DB;
+  color: $text-background;
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 700;
@@ -39,7 +39,7 @@
 .app__contact-sub-header {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  color: #D1D5DB;
+  color: $text-background;
 }
 
 .app__contact-name-input {

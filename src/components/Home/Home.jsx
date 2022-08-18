@@ -3,7 +3,7 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from "react-scroll";
 
 
-import Typewriter from "../../components/Typewriter";
+import Typewriter from "./Typewriter";
 import './Home.scss'
 
 const Home = () => {

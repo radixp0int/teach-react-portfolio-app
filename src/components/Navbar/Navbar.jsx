@@ -65,7 +65,7 @@ const Navbar = () => {
                     <li className="app__navbar-social-item bg-blue-600">
                         <a
                             className="app__navbar-social-item-link"
-                            href="https://www.linkedin.com/"
+                            href="src/components/Navbar/Navbar"
                         >
                             Linkedin <FaLinkedin size={30} />
                         </a>
@@ -73,7 +73,7 @@ const Navbar = () => {
                     <li className="app__navbar-social-item bg-[#333333]">
                         <a
                             className="app__navbar-social-item-link"
-                            href="https://www.github.com/"
+                            href="src/components/Navbar/Navbar"
                         >
                             Github <FaGithub size={30} />
                         </a>
@@ -81,7 +81,7 @@ const Navbar = () => {
                     <li className="app__navbar-social-item app__color-accent">
                         <a
                             className="app__navbar-social-item-link"
-                            href="https://www.google.com/gmail/about/"
+                            href="src/components/Navbar/Navbar"
                         >
                             Email <HiOutlineMail size={30} />
                         </a>
