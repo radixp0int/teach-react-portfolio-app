@@ -12,6 +12,8 @@ import Vue from '../assets/vue.png';
 import Firebase from '../assets/firebase.png';
 import MongoDB from '../assets/mongo.png';
 import GitHub from '../assets/github.png';
+import Postman from '../assets/postman.webp';
+import Karate from '../assets/karate.png';
 import Photoshop from '../assets/photoshop.png';
 
 import DashboardImg from '../assets/dashboardProject.jpg';
@@ -32,6 +34,8 @@ export default {
     Firebase,
     MongoDB,
     GitHub,
+    Postman,
+    Karate,
     React,
     NodeJS,
     Photoshop,

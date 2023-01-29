@@ -2,17 +2,13 @@ import React, { useState } from "react";
 import {
     FaBars,
     FaTimes,
-    FaGithub,
-    FaLinkedin,
-    FaInstagram,
 } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
 
 import Logo from "../../assets/logo.png";
 import { text } from "../../constants";
 import "./Navbar.scss";
+import SocialLinks from "./SocialLinks/SocialLinks";
 
 const Navbar = () => {
     const [mobileNav, setMobileNav] = useState(false);
@@ -58,41 +54,8 @@ const Navbar = () => {
                     </li>
                 ))}
             </ul>
-
             {/* Social icons */}
-            <div className="app__navbar-social-menu">
-                <ul>
-                    <li className="app__navbar-social-item bg-blue-600">
-                        <a
-                            className="app__navbar-social-item-link"
-                            href="src/components/Navbar/Navbar"
-                        >
-                            Linkedin <FaLinkedin size={30} />
-                        </a>
-                    </li>
-                    <li className="app__navbar-social-item bg-[#333333]">
-                        <a
-                            className="app__navbar-social-item-link"
-                            href="src/components/Navbar/Navbar"
-                        >
-                            Github <FaGithub size={30} />
-                        </a>
-                    </li>
-                    <li className="app__navbar-social-item app__color-accent">
-                        <a
-                            className="app__navbar-social-item-link"
-                            href="src/components/Navbar/Navbar"
-                        >
-                            Email <HiOutlineMail size={30} />
-                        </a>
-                    </li>
-                    <li className="app__navbar-social-item bg-[#565f69]">
-                        <a className="app__navbar-social-item-link" href="google.com">
-                            Resume <BsFillPersonLinesFill size={30} />
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <SocialLinks />
         </div>
     );
 };

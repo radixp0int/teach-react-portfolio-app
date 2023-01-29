@@ -15,7 +15,7 @@ const navItems = [
     },
     {
         linkTo: 'work',
-        linkText: 'Projects'
+        linkText: 'Experience'
     },
     {
         linkTo: 'contact',
@@ -25,14 +25,14 @@ const navItems = [
 
 const skillItems = [
     {
-        src: images.Angular,
-        altText: 'Angular icon',
-        text: 'Angular'
+        src: images.Karate,
+        altText: 'Karate icon',
+        text: 'Karate'
     },
     {
-        src: images.Spring,
-        altText: 'Spring icon',
-        text: 'Spring'
+        src: images.Postman,
+        altText: 'Postman icon',
+        text: 'Postman'
     },
     {
         src: images.JS,
@@ -42,17 +42,17 @@ const skillItems = [
     {
         src: images.React,
         altText: 'React icon',
-        text: 'React'
+        text: 'SQL'
     },
     {
-        src: images.NodeJS,
-        altText: 'Node icon',
-        text: 'Node'
+        src: images.CSS,
+        altText: 'CSS icon',
+        text: 'CSS'
     },
     {
         src: images.MongoDB,
         altText: 'Mongo icon',
-        text: 'Mongo'
+        text: 'Jira'
     },
     {
         src: images.GitHub,
@@ -62,7 +62,7 @@ const skillItems = [
     {
         src: images.Photoshop,
         altText: 'Photoshop icon',
-        text: 'Photoshop'
+        text: 'IntelliJ'
     }
 ]
 
